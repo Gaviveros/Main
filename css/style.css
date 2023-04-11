@@ -938,10 +938,95 @@ footer {
   }
 }
 
+@media (max-width: 375px) {
+
+  #logomin{
+    background-size: 17% !important;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  #about,#gallery,#contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .description{
+    line-height: 25px;
+  }
+
+  .textHistory{
+    display: block !important;
+  }
+
+  .imgCarousel1{
+    width: auto !important;
+    height: auto !important;
+    position: relative;
+  }
+
+  .img1{
+    max-width: 361% !important;
+    right: 203%;
+  }
+
+  .img2{
+    max-width: 222% !important;
+    right: 18%;
+  }
+
+  .img3{
+    max-width: 222% !important;
+    right: 61%;
+  }
+
+  .boxes{
+    width: 13.6rem;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .btnCardComoSerParte{
+    top: 4% !important;
+    height: 42px;
+  }
+
+  .divCards{
+    flex-wrap: wrap;
+  }
+
+  .cardImg{
+    margin-bottom: 40px !important;
+  }
+
+  .titles{
+    padding: 0px !important;
+  }
+}
+
+
+
+
 .divTextHistory{
   height: 850px;
   color: white !important;
   font-family: 'Roboto Slab';
+}
+
+.divCards{
+  display: flex;
+  justify-content: center;
 }
 
 .pTextHistory{
@@ -1039,5 +1124,3 @@ li.flag-li{
 .btnCardComoSerParte{
   top: 11%;
 }
-
-

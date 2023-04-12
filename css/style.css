@@ -5,7 +5,7 @@ body {
     font-style: normal;
     font-weight: 400;
     position: relative;
-} 
+}
 
 html,body {
   width: 100%;
@@ -804,6 +804,10 @@ footer {
 
 @media (max-width: 767px) {
 
+  body{
+    background: rgb(208, 255, 0) !important;
+  }
+
   #home, .overlay {
     height: 100vh;
   }
@@ -873,6 +877,10 @@ footer {
 
 @media (max-width: 650px) {
 
+  body{
+    background: rgb(21, 255, 0) !important;
+  }
+
   #logomin{
     background-size: 17% !important;
   }
@@ -938,8 +946,11 @@ footer {
   }
 }
 
-@media (max-width: 100px) {
+@media (max-width: 375px) {
 
+  body{
+    background: red !important;
+  }
   #logomin{
     background-size: 17% !important;
   }
@@ -1124,3 +1135,5 @@ li.flag-li{
 .btnCardComoSerParte{
   top: 11%;
 }
+
+

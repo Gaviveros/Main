@@ -938,7 +938,7 @@ footer {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 100px) {
 
   #logomin{
     background-size: 17% !important;

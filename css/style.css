@@ -1,10 +1,10 @@
 /* Body 
 ------------------------------------- */
 body {
-    background: #ffffff !important;   
-    font-style: normal;
-    font-weight: 400;
-    position: relative;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  font-style: normal; 
+  font-weight: 400;
+  position: relative;
 }
 
 html,body {
@@ -275,18 +275,48 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    background: none repeat scroll 0 0 #fff;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin:15px auto;
+  position: relative;
+  color: #FFF;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
 }
+.preloader::after,
+.preloader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 50%;
+  transform: scale(0.5) translate(0, 0);
+  background-color: #FFF;
+  border-radius: 50%;
+  animation: animloader 1s infinite ease-in-out;
+}
+.preloader::before {
+  background-color: #FF3D00;
+  transform: scale(0.5) translate(-48px, -48px);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes animloader {
+    50% {
+      transform: scale(1) translate(-50%, -50%);
+}
+}
+    
 
 .sk-spinner-pulse {
   width: 60px;
@@ -768,31 +798,7 @@ footer {
   }
 
   .img1{
-    position: relative;
-    max-width: 190% !important;
     width: auto !important;
-    right: 366px;
-  }
-
-  .img2{
-    max-width: 110% !important;
-    right: 1%;
-    width: auto !important;
-    position: relative;
-  }
-
-  .img3{
-    max-width: 110% !important;
-    right: 1%;
-    width: auto !important;
-    position: relative;
-  }
-
-  .img3{
-    max-width: 127% !important;
-    right: 1%;
-    width: auto !important;
-    position: relative;
   }
 
   .carousel2{
@@ -825,12 +831,12 @@ footer {
   }
 
   .img1{
-    max-width: 190% !important;
+    max-width: 190%;
     right: 495px;
   }
 
-  .img2{
-    max-width: 127% !important;
+  .img3{
+    right: 50%;
   }
 
   .contextBoxes{
@@ -840,11 +846,6 @@ footer {
     position: relative;
     bottom: 36px;
     justify-content: center;
-  }
-
-  .carousel1{
-    height: 550px !important;
-    z-index: 1;
   }
 
   .boxes{
@@ -869,6 +870,21 @@ footer {
     font-size: 30px !important;
   }
 
+  .img2Nosotros{
+    width: auto !important; 
+    right: 15%;
+  }
+
+  .img1Nosotros{
+    width: auto !important; 
+    right: 7%;
+  }
+
+  .img3Nosotros{
+    width: auto !important; 
+    right: 7%;
+  }
+
 }
 
 @media (max-width: 650px) {
@@ -889,9 +905,7 @@ footer {
     width: 100%;
   }
 
-  #about,
-  #gallery,
-  #contact {
+  #about,#gallery,#contact {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -911,18 +925,15 @@ footer {
   }
 
   .img1{
-    max-width: 329% !important;
-    right: 110%;
+    right: 107%;
   }
 
   .img2{
-    max-width: 220% !important;
     right: 10%;
   }
 
   .img3{
-    max-width: 211% !important;
-    right: 54%;
+    right: 75%;
   }
 
   .boxes{
@@ -947,6 +958,45 @@ footer {
 
   .titles{
     padding: 0px !important;
+  }
+
+  .img1Nosotros{ 
+    right: 7%;
+  }
+
+  .img2Nosotros{
+    right: 36%;
+  }
+
+  .img3Nosotros{
+    right: 21%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .img1{
+    right: 170%; 
+  }
+
+  .img2{
+    right: 50%; 
+  }
+
+  .img3{
+    right: 148%;
+  }
+
+  .img1Nosotros{
+    right: 32%;
+  }
+
+  .img2Nosotros{
+    right: 50%;
+  }
+
+  .img3Nosotros{
+    right: 67%;
   }
 }
 
@@ -987,18 +1037,15 @@ footer {
   } 
 
   .img1{
-    max-width: 361% !important;
-    right: 203%;
+    right: 200%;
   }
 
   .img2{
-    max-width: 222% !important;
-    right: 18%;
+    right: 56%;
   }
 
   .img3{
-    max-width: 222% !important;
-    right: 61%;
+    right: 160%;
   }
 
   .boxes{
@@ -1024,14 +1071,54 @@ footer {
   .titles{
     padding: 0px !important;
   }
+
+  .img1Nosotros{
+    right: 50%;
+  }
+
+  .img2Nosotros{
+    right: 50%;
+  }
 }
 
+.img1{
+  max-width: none !important;
+  position: relative;
+}
 
+.img2{
+  max-width: none !important;
+  position: relative;
+  width: auto;
+}
 
+.img3{
+  max-width: none !important;
+  position: relative;
+  width: auto;
+}
+
+.img1Nosotros{
+  width: 100%;
+  max-width: none !important;
+  position: relative;
+}
+
+.img2Nosotros{
+  width: 100%;
+  max-width: none !important;
+  position: relative;
+}
+
+.img3Nosotros{
+  width: 100%;
+  max-width: none !important;
+  position: relative;
+}
 
 .divTextHistory{
   height: 850px;
-  color: white !important;
+  color: black !important;
   font-family: 'Roboto Slab';
 }
 
@@ -1041,12 +1128,12 @@ footer {
 }
 
 .pTextHistory{
-  color: white;
+  color: black;
   font-weight: 100;
 }
 
 .h2TextHistory{
-  color: white;
+  color: black;
 }
 
 .cardImg{
@@ -1080,18 +1167,6 @@ footer {
   width: 100%;
 }
 
-.img1{
-  width: 100%;
-}
-
-.img2{
-  width: 100%;
-}
-
-.img3{
-  width: 100%;
-}
-
 .textHistory{
   display: flex;
 }
@@ -1099,7 +1174,6 @@ footer {
 .textHistoryDiv{
   width: 50%;
   height: auto;
-  background-color: #12a500;
 }
 
 .flag.en{
@@ -1144,3 +1218,5 @@ li.flag-li{
   background: wheat !important;
   color: black !important;
 }
+
+

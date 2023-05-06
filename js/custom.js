@@ -26,20 +26,6 @@ $(document).ready(function() {
             event.preventDefault();
         });
     });
-    
- /* Home Slideshow Vegas
-  -----------------------------------------------*/
-  // $(function() {
-  //   $('body').vegas({
-  //       slides: [
-  //           { src: 'images/slide-img1.jpg' },
-  //           { src: 'images/slide-img2.jpg' },
-  //           { src: 'images/slide-img3.jpg' },
-  //           { src: 'images/slide-img4.jpg' }
-  //       ]
-  //   });
-  // });
-
 
   /* Team carousel
   -----------------------------------------------*/
@@ -76,12 +62,7 @@ $(document).ready(function() {
             } else {
                 $('.go-top').fadeOut(200);
            }
-        });   
-          // Animate the scroll to top
-        $('.go-top').click(function(event) {
-          event.preventDefault();
-        $('html, body').animate({scrollTop: 0}, 300);
-    });
+        });
 
 
   /* wow

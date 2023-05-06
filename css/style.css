@@ -759,9 +759,9 @@ footer {
 -----------------------------------------*/
 
 .go-top {
-  background-color: #ffffff;
+  background-color: #25d366;
   box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
-  transition : all 1s ease;
+  transition: all 1s ease;
   bottom: 2em;
   right: 2em;
   color: #222;
@@ -769,8 +769,8 @@ footer {
   display: none;
   position: fixed;
   text-decoration: none;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   line-height: 35px;
   text-align: center;
   border-radius: 100%;
@@ -1193,5 +1193,3 @@ li.flag-li{
   background: wheat !important;
   color: black !important;
 }
-
-
